@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/weather/clear sky.jpg');
+}
+
+.container {
+    border: 3px solid black;
+    max-width: 420px;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border-radius: 60px;
+}
+
+.weather-item {
+    padding: 0.5rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.search-icon :hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+button {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    color: white;
+}
+.search-bar {
+    height: 40px;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 6px;
+    width: 80%;
+    outline: none;
+    border: none;
+}
+
+.description {
+    text-transform: capitalize;
+  }
+@media only screen and (max-width: 480px) {
+    .search-bar {
+        font-size: 15px;
+    }
+  }
