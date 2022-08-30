@@ -43,9 +43,6 @@ body {
     background-color: rgba(0,0,0,0.8);
 }
 
-.sun {
-    background-color:  white
-}
 button {
     border-radius: 50%;
     cursor: pointer;
@@ -74,10 +71,16 @@ button {
     align-items: center;
   justify-content: space-between;
 }
+
 .description {
     text-transform: capitalize;
     padding-left: 0;
   }
+
+.sun {
+    background-color:  white
+}
+
 @media only screen and (max-width: 480px) {
     .search-bar {
         font-size: 15px;
