@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,32 +9,33 @@
 </head>
 
 <body>
-    <div class="container">
+  <main class="container">
+    <!--Seach Section-->
     <div class="search">
-        <input type="text" class="search-bar" placeholder="City">
-        <button><img class="img-icon" src="images\icons\SearchIcon.png" alt="Search Icon" /></button>
+      <input type="text" class="search-bar" placeholder="City">
+      <button><img class="img-icon" src="images\icons\SearchIcon.png" alt="Search Icon" /></button>
     </div>
+     <!-- Display Info Section-->
     <div class="weather">
-        <h2 class="weather-item city">Weather in Wonderland</h2>
-        <h1 class="weather-item temperature">15°C</h1>
-        <div class="flex-container">
-            <img class="weather-item icon" src="https://openweathermap.org/img/wn/04n.png" alt="" />
-            <h3 class="weather-item description">Always Sunny</h3>
+      <h2 class="weather-item city">Weather in Wonderland</h2>
+      <h1 class="weather-item temperature">15°C</h1>
+      <div class="icon-description-container">
+        <img class="weather-item icon" src="https://openweathermap.org/img/wn/04n.png" alt="weather icon" />
+        <h3 class="weather-item description">Always Sunny</h3>
+      </div>
+      <h3 class="weather-item humidity">Humidity: 50%</h3>
+      <h3 class="weather-item wind">Wind speed: 15.5 km/h</h3>
+      <div class="sun-info-container">
+        <div class="sun-flex-container">
+          <img class="img-icon sun" src="images\icons\sunrise.png" alt="Sunrise Icon" />
+          <div class="weather-item sunrise">Sunrise: 6:00</div>
         </div>
-        <h3 class="weather-item humidity">Humidity: 50%</h3>
-        <h3 class="weather-item wind">Wind speed: 15.5 km/h</h3>
-        <div class="flex-container-1 ">
-            <div class="flex-container ">
-                <img class="img-icon sun" src="images\icons\sunrise.png" alt="Sunrise Icon" />
-                <div class="weather-item sunrise">Sunrise: 6:00</div>
-            </div>
-            <div class="flex-container">
-                <img class="img-icon sun" src="images\icons\sunsetBlack.png" alt="Sunset Icon" />
-                <div class="weather-item sunset">Sunset: 20:00</div>
-            </div>
+        <div class="sun-flex-container">
+          <img class="img-icon sun" src="images\icons\sunsetBlack.png" alt="Sunset Icon" />
+          <div class="weather-item sunset">Sunset: 20:00</div>
         </div>
+      </div>
     </div>
-    </div>
+  </main>
 </body>
-
 </html>

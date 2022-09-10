@@ -1,88 +1,97 @@
+/*General Styles*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('images/weather/clear sky.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('images/weather/clear sky.jpg');
 }
 
 .container {
-    border: 3px solid black;
-    max-width: 420px;
-    padding: 2rem;
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-    border-radius: 60px;
+  border: 3px solid black;
+  max-width: 420px;
+  padding: 2rem;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-radius: 60px;
 }
 
-.weather-item {
-    padding: 0.8rem;
-}
-
+/*Seach Section*/
 .search {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
 }
 
-.img-icon {
-    width: 30px;
-    height: 30px;
-}
-
-.img-icon :hover {
-    background-color: rgba(0,0,0,0.8);
+.search-bar {
+  height: 40px;
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 6px;
+  width: 80%;
+  outline: none;
+  border: none;
 }
 
 button {
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.1);
-    border: none;
-    color: white;
-}
-.search-bar {
-    height: 40px;
-    border-radius: 20px;
-    font-size: 25px;
-    padding: 6px;
-    width: 80%;
-    outline: none;
-    border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.1);
+  border: none;
+  color: white;
 }
 
-.flex-container {
+.img-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.img-icon :hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Display Info Section*/
+.weather-item {
+  padding: 0.8rem;
+}
+.icon-description-container {
     display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+.description {
+  text-transform: capitalize;
+  padding-left: 0;
+  }
+/*align & center sunrise & sunset containers*/
+.sun-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*align & center sunrise's & sunset's img and text*/
+.sun-flex-container {
+  display: flex;
   align-items: center;
   justify-content: start;
 }
 
-.flex-container-1 {
-    display: flex;
-    align-items: center;
-  justify-content: space-between;
-}
-
-.description {
-    text-transform: capitalize;
-    padding-left: 0;
-  }
-
 .sun {
-    background-color:  white
+  background-color: white
 }
 
+/*Adapt for Phones*/
 @media only screen and (max-width: 480px) {
-    .search-bar {
-        font-size: 15px;
-    }
+  .search-bar {
+    font-size: 15px;
   }
+}
