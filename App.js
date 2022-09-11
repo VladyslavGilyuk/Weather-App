@@ -41,8 +41,7 @@ let weather = {
           sunriseLabel.innerText = `Sunrise: ${new Date(1000* sunrise).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
           sunsetLabel.innerText = `Sunset: ${new Date(1000* sunset).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
           /*change the background with img associated with entered city*/
-          document.body.style.backgroundImage =
-          `url("https://source.unsplash.com/1600x900/?${name})"`;
+            /*document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?${name})"`;*/
         },
         /*pass the entered city to main func*/
         search: function () {
